@@ -1,0 +1,117 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+
+  --brown: hsl(14, 45%, 36%);
+  --rose-1: hsl(332, 51%, 32%);
+  --rose-2: hsl(330, 100%, 98%);
+
+  --fs-body: 16px;
+
+  --ff-heading: 'Young Serif', serif;
+  --ff-body: 'Outfit', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 24px;
+    min-height: 100vh;
+    background-color: var(--stone-100);
+}
+
+@media (min-width:  375px) {
+  .containers {
+    align-items: end;
+    justify-self: end;
+    width: 100px;
+    height: 100hv;
+  }
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 100hv;
+    justify-self: center;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+img {
+    margin: 10px;
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--ff-heading);
+}
+
+h2 {
+    color: var(--brown)
+}
+
+p, span {
+    font-family: var(--ff-body);
+}
+
+span {
+    font-weight: bold;
+}
+
+li {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+ol li::marker {
+    color: var( --rose-1);
+    font-weight: bold;
+}
+
+.prep-time h3 {
+    color: var(--rose-1);
+    font-weight: 800px;
+}
+
+.prep-time {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--rose-2);
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-table tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-table tr:last-child {
+  border-bottom: none;
+}
+
+.nutrition-table td {
+  padding: 16px 0;
+}
+
+.nutrition-table .value {
+  font-weight: 700;
+  
+  text-align: right;
+}
+
+.nutrition-value {
+  color: var(--brown);
+  font-weight: 700;
+}
